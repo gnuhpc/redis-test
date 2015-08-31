@@ -13,3 +13,8 @@ PATCHLEVEL = 2
 >
 Python 2.6 (r26:66714, May  6 2011, 15:10:21)
 [GCC 4.3.4 [gcc-4_3-branch revision 152973]] on linux2
+
+#测试过程
+
+采用redis-python客户端进行内存写入，在写入之前进行flushdb，写入完毕后获取info信息中的内存占用情况。
+
